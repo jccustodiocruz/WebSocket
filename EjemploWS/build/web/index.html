@@ -75,8 +75,9 @@ and open the template in the editor.
                 ws.onmessage = function (evt) {
                     var received_msg = evt.data;                    
                     var cbClientes = document.getElementById("clientes");                                    
-                        var txtMsjs = document.getElementById("txtMsjs");
-                        txtMsjs.value += "\n" + received_msg;                    
+                    var txtMsjs = document.getElementById("txtMsjs");
+                        txtMsjs.value += "\n" + received_msg;    
+                    console.log(received_msg);
                 };
 
                 ws.onclose = function () {
